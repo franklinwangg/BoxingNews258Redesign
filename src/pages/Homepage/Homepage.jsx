@@ -64,43 +64,49 @@ const Homepage = () => {
         {/* Left Feature Story */}
         <article className="feature-story">
           <img className="feature-story__image" src={img1} alt="Main Story" />
-          <div className="feature-story__description">
-            BOXING NEWS | 2 HOURS AGO
+          <div className="story-information">
+            <div className="feature-story__description">
+              BOXING NEWS | 2 HOURS AGO
+            </div>
+            <h1 className="feature-story__title">
+              ‘I’m treating this as my championship of the world fight’: Parker
+              not taking Wardley lightly
+            </h1>
+            <p className="feature-story__author">
+              By Wil Esco · 1 Comment / 1 New
+            </p>
           </div>
-          <h1 className="feature-story__title">
-            ‘I’m treating this as my championship of the world fight’: Parker
-            not taking Wardley lightly
-          </h1>
-          <p className="feature-story__author">
-            By Wil Esco · 1 Comment / 1 New
-          </p>
         </article>
 
         {/* Right Side Stories */}
         <div className="side-stories">
           <article className="side-story">
             <img className="side-story__image" src={img2} alt="Story" />
-            <div className="side-story__description">
-              BOXING NEWS | 8:58 AM PDT
+            <div className="story-information">
+              <div className="side-story__description">
+                BOXING NEWS | 8:58 AM PDT
+              </div>
+              <h2 className="side-story__title">
+                Parker: Joshua vs Paul ‘doesn’t make sense’ if AJ is serious
+                about boxing
+              </h2>
+              <p className="side-story__author">
+                By Scott Christ · 3 Comments / 3 New
+              </p>
             </div>
-            <h2 className="side-story__title">
-              Parker: Joshua vs Paul ‘doesn’t make sense’ if AJ is serious about
-              boxing
-            </h2>
-            <p className="side-story__author">
-              By Scott Christ · 3 Comments / 3 New
-            </p>
           </article>
 
           <article className="side-story">
             <img className="side-story__image" src={img3} alt="Story" />
-            <div className="side-story__description">
-              BOXING NEWS | 7:34 AM PDT
+            <div className="story-information">
+              <div className="side-story__description">
+                BOXING NEWS | 7:34 AM PDT
+              </div>
+              <h2 className="side-story__title">
+                ‘I know his style’: Fulton doesn’t expect hard fight from Foster
+              </h2>
+              <p className="side-story__author">By Wil Esco · 4 New</p>
             </div>
-            <h2 className="side-story__title">
-              ‘I know his style’: Fulton doesn’t expect hard fight from Foster
-            </h2>
-            <p className="side-story__author">By Wil Esco · 4 New</p>
           </article>
         </div>
       </main>

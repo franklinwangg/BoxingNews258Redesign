@@ -112,12 +112,14 @@
   margin: 0 auto;
   display: grid;
   gap: 7vh;
+  margin-top: 5vh;
 }
 
 /* Inline | http://localhost:5173/ */
 
 .feature-story {
   grid-column: span 2;
+  position: relative;
 }
 
 .feature-story__image {
@@ -185,3 +187,13 @@
   flex-direction: column;
   gap: 7vh;
 }
+
+/* Inline | http://localhost:5173/ */
+
+.story-information {
+  width: 80%;
+  transform: translate(25%, -20%);
+  background-color: var(--homepage-background-color);
+}
+
+/* Inline | http://localhost:5173/ */
