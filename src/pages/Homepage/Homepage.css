@@ -1,8 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   /* :root {--<variable name>: <variable value>; …}
 <property> : var(<variable name>) */
-  /* --feature-story-font: 400 47px/100% Arial; */
-  --feature-story-font: 400 47px/100% Arial;
+
+  --large-font: 400 47px/100% Arial;
+  --medium-font: 400 28px/100% Arial;
+  --small-font: 400 11px/120% "Courier New";
+
+  --deep-red-pink: #b31e3e;
+  --white: #ffffff;
+
+  --large-font-color: #131313;
+  --medium-font-color: #131313;
+  --small-font-color: #131313;
+
+  --feature-story-font: var(--large-font);
+  --side-story-font: var(--medium-font);
+  --story-description-font: var(--small-font);
+
+  --feature-story-color: var(--large-font-color);
+  --side-story-color: var(--medium-font-color);
+  --story-description-color: var(--small-font-color);
+
+  --header-color: var(--deep-red-pink);
+  --homepage-background-color: var(--white);
 }
 
 /* Banner */
@@ -30,6 +55,7 @@
   display: flex;
   margin-left: 10vw; /* updated from 20vw */
   gap: 1vw;
+  margin-bottom: 5vh;
 }
 
 .brand-description {
@@ -85,6 +111,7 @@
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
+  gap: 7vh;
 }
 
 /* Inline | http://localhost:5173/ */
@@ -98,4 +125,63 @@
 }
 
 .feature-story__description {
+}
+
+/* Inline | http://localhost:5173/ */
+
+.feature-story__title {
+  font: var(--feature-story-font);
+  color: var(--feature-story-color);
+}
+
+/* Inline | http://localhost:5173/ */
+
+.feature-story__author {
+  font: var(--story-description-font);
+  color: var(--story-description-color);
+}
+
+.side-story__image {
+  width: 100%;
+}
+
+.side-story__description {
+  font: var(--story-description-font);
+  color: var(--side-story-color);
+}
+
+.side-story__title {
+  font: var(--side-story-font);
+  color: var(--side-story-color);
+}
+
+.side-story__author {
+  font: var(--story-description-font);
+  color: var(--story-description-color);
+}
+
+/* Inline | http://localhost:5173/ */
+
+.feature-story__description {
+  font: var(--story-description-font);
+  color: var(--story-description-color);
+}
+
+/* Inline | http://localhost:5173/ */
+
+.header__auth-btn {
+  background-color: var(--header-color);
+  color: var(--homepage-background-color);
+}
+
+.brand-description__tagline {
+  font-weight: 700;
+}
+
+/* Inline | http://localhost:5173/ */
+
+.side-stories {
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
 }

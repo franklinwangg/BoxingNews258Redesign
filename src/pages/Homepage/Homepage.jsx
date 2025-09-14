@@ -23,8 +23,8 @@ const Homepage = () => {
           <div className="brand">SB NATION</div>
           <div className="actions">
             <div className="actions__auth-links">
-              <button className="header__auth-btn--sign-up">Sign Up</button>
-              <button className="header__auth-btn--login">Login</button>
+              <button className="header__auth-btn">Sign Up</button>
+              <button className="header__auth-btn">Login</button>
             </div>
           </div>
         </div>
