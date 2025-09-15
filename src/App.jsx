@@ -4,6 +4,7 @@ import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PostsProvider from "./contexts/PostsProvider";
+import Post from "./pages/Post/Post";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
           <Route path="/" element={<Homepage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/sign-up" element={<SignUp />} />
-          {/* <Route path="/post/:id" element={<Post />} /> */}
+          <Route path="/post/:id" element={<Post />} />
         </Routes>
       </PostsProvider>
     </BrowserRouter>
