@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "title": "‘I’m treating this as my championship of the world fight’: Parker not taking Wardley lightly",
+    "author": "Wil Esco",
+    "description": "BOXING NEWS",
+    "imgUrl": "../assets/postImages/joseph-parker.png"
+  },
+  {
+    "id": "2",
+    "title": "Parker: Joshua vs Paul ‘doesn’t make sense’ if AJ is serious about boxing",
+    "author": "Scott Christ",
+    "description": "BOXING NEWS",
+    "imgUrl": "../assets/postImages/parker-and-joshua.png"
+  },
+  {
+    "id": "3",
+    "title": "‘I know his style’: Fulton doesn’t expect hard fight from Foster",
+    "author": "Wil Esco",
+    "description": "BOXING NEWS",
+    "imgUrl": "../assets/postImages/fulton-vs-foster.png"
+  }
+]

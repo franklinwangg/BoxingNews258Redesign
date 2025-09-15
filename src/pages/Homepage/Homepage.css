@@ -36,41 +36,8 @@
 }
 
 /* Header Wrapper */
-.header {
-  background-color: #b31e3e;
-  color: white;
-}
-
-.header__logo-title-search {
-  display: flex;
-  flex-direction: row;
-  gap: 18vw; /* updated from 26vw */
-  margin-top: 2vh;
-  margin-left: 4vw;
-  width: 1536px;
-}
 
 /* Left Section */
-.header__logo-and-description {
-  display: flex;
-  margin-left: 10vw; /* updated from 20vw */
-  gap: 1vw;
-  margin-bottom: 5vh;
-}
-
-.brand-description {
-  font-size: 13px;
-  display: flex;
-  flex-direction: column;
-}
-
-.logo {
-  height: 100%;
-}
-
-.logo__image {
-  height: 100%;
-}
 
 /* Right Section */
 .brand-and-actions {
@@ -79,32 +46,6 @@
 }
 
 /* Navbar */
-.nav-bar__options {
-  display: flex;
-  list-style-type: none;
-  gap: 2vw;
-  justify-content: center;
-}
-
-.header__brand-and-actions {
-  display: flex;
-  /*! flex-direction: ; */
-  justify-content: space-around;
-  margin-left: 34vw;
-}
-
-.header__brand-and-actions {
-  display: flex;
-  /*! flex-direction: ; */
-  justify-content: space-around;
-  margin-left: 34vw;
-}
-
-.header__search-icon {
-  width: 36vw;
-  padding-left: 120px;
-  flex: 1;
-}
 
 .homepage__content {
   grid-template-columns: repeat(3, 1fr);
@@ -170,15 +111,6 @@
 }
 
 /* Inline | http://localhost:5173/ */
-
-.header__auth-btn {
-  background-color: var(--header-color);
-  color: var(--homepage-background-color);
-}
-
-.brand-description__tagline {
-  font-weight: 700;
-}
 
 /* Inline | http://localhost:5173/ */
 
