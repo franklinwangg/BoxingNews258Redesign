@@ -72,3 +72,82 @@
 .post__image-and-article {
   width: 50%;
 }
+
+/* Inline | http://localhost:5173/post/1 */
+
+.active-articles {
+  margin-left: 5%;
+}
+
+/* Inline | http://localhost:5173/post/1 */
+
+.active-article__date-and-commentnumber {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.active-article__date {
+  border: 0 solid;
+  color: #131313;
+  font: 450 11px/120% "__IBM_Plex_Mono_11c30a",
+    "__IBM_Plex_Mono_Fallback_11c30a", "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+.active-article__commentnumber {
+  box-sizing: border-box;
+  border: 0 solid;
+  white-space: nowrap;
+  color: inherit;
+  font: 400 11px/120% "__IBM_Plex_Mono_11c30a",
+    "__IBM_Plex_Mono_Fallback_11c30a", "Courier New", monospace;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+}
+
+.post__sidebar-title {
+  margin-bottom: 1vh;
+}
+
+/* Inline | http://localhost:5173/post/1 */
+
+.active-article__title {
+  font: 400 13px/110% "__DrukTextWide_9df7b8", "__DrukTextWide_Fallback_9df7b8",
+    Arial, sans-serif, Arial, sans-serif;
+  letter-spacing: -0.5px;
+  border: 0 solid;
+  color: inherit;
+  text-decoration: inherit;
+  box-shadow: inset 0 -1px 0 0 transparent;
+}
+
+.active-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+/* Inline | http://localhost:5173/post/1 */
+
+.post__sidebar {
+  margin-left: 5vw;
+  width: 21%;
+}
+
+.active-article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+}
+
+/* Inline | http://localhost:5173/post/1 */
+
+.active-articles {
+  margin-left: 3vw;
+}
+
+.post__sidebar-title {
+  text-transform: uppercase;
+}
