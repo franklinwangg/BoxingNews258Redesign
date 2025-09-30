@@ -1,8 +1,13 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import "./HeaderBar.css";
+import { useNavigate } from "react-router-dom";
+import Login from "../pages/Login/Login";
+import SignUp from "../pages/SignUp/SignUp";
 
 const HeaderBar = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <header className="header">
@@ -10,8 +15,22 @@ const HeaderBar = () => {
           <div className="brand">SB NATION</div>
           <div className="actions">
             <div className="actions__auth-links">
-              <button className="header__auth-btn">Sign Up</button>
-              <button className="header__auth-btn">Login</button>
+              <button
+                className="header__auth-btn"
+                onClick={() => {
+                  navigate("/sign-up");
+                }}
+              >
+                Sign Up
+              </button>
+              <button
+                className="header__auth-btn"
+                onClick={() => {
+                  navigate("/login");
+                }}
+              >
+                Login
+              </button>
             </div>
           </div>
         </div>

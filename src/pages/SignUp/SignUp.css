@@ -1,0 +1,180 @@
+/* Inline | http://localhost:5173/sign-up */
+
+.signup-page__signup-title {
+  font-family: "__DrukText_7ca309", "__DrukText_Fallback_7ca309", Arial,
+    sans-serif, Arial, sans-serif;
+  font-size: 28px;
+}
+
+.signup-page__username-and-password-field {
+}
+
+body {
+  background-color: #e9e9e9;
+}
+
+#root {
+}
+
+/* Inline | http://localhost:5173/sign-up */
+
+.signup-page__username-and-password-field {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  background-color: white;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+/* Inline | http://localhost:5173/sign-up */
+
+.signup-page__signup-title {
+  justify-content: space-evenly;
+}
+
+.signup-page__signup-description {
+  display: flex;
+}
+
+/* Inline | http://localhost:5173/sign-up */
+
+.signup-page__signup-title {
+  /* justify-content: space-evenly; */
+  justify-content: center;
+}
+
+.signup-page__signup-description {
+  justify-content: space-evenly;
+  margin-top: 2vh;
+}
+
+/* Inline | http://localhost:5173/sign-up */
+
+.signup-page__signup-title {
+  text-align: center;
+}
+
+.signup-page__signup-description {
+  text-align: center;
+}
+
+#root {
+  width: 100%;
+}
+
+.signup-page__signup-description {
+}
+
+.signup-page__signup-title {
+  line-height: 1.1;
+}
+
+.signup-page__label--password {
+}
+
+.signup-page__input {
+  width: 50%;
+  display: flex;
+}
+
+.signup-page__label {
+  display: flex;
+}
+
+/* Inline | http://localhost:5173/sign-up */
+
+.signup-page__entry-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-page__username-and-password-field {
+  max-width: 463px;
+}
+
+/* Inline | http://localhost:5173/sign-up */
+
+.signup-page__label {
+  /* justify-content: center; */
+  /* margin-right: 28vw; */
+}
+
+/* Inline | http://localhost:5173/sign-up */
+
+.signup-page__entry-section {
+  /* margin-left: 26vw; */
+}
+
+.signup-page__input {
+  /* width: 50%; */
+  width: 100%;
+}
+
+.signup-page__label {
+  /* justify-content: center; */
+  /* margin-right: 28vw; */
+}
+
+/* Inline | http://localhost:5173/sign-up */
+
+.signup-page__signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-page__username-and-password-field {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-page__username-and-password-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-page__signup-description {
+  margin-bottom: 2vh;
+}
+
+.signup-page__input {
+  height: 3vh;
+}
+
+/* Inline | http://localhost:5173/sign-up */
+
+.signup-page__username-and-password-field {
+  font: var(--_1l2t50lm3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin: auto;
+}
+
+/* Inline | http://localhost:5173/sign-up */
+
+.signup-page__signup-title {
+  font: 700 28px/100% "__DrukText_7ca309", "__DrukText_Fallback_7ca309", Arial,
+    sans-serif, Arial, sans-serif;
+  /* \37 00\ 28px\/100\%\ \'__DrukText_7ca309\'\,\ \'__DrukText_Fallback_7ca309\'\,\ Arial\,\ sans-serif\,Arial\,sans-serif; */
+}
+
+.signup-page__submit-button {
+  color: #fff;
+  background-color: #131313;
+  font: 700 16px/120% "__DrukText_7ca309", "__DrukText_Fallback_7ca309", Arial,
+    sans-serif, Arial, sans-serif;
+}
+
+.signup-page__signup-title {
+  font-weight: bold;
+}
+
+.signup-page__entry-section {
+  margin-bottom: 1rem;
+}

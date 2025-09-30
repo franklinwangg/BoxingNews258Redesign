@@ -25,6 +25,7 @@ const Homepage = () => {
 
   const { posts } = useContext(PostsContext);
   console.log("homepage : posts - ", posts);
+  console.log("posts[0] : ", posts[0]);
 
   return (
     <div className="homepage">

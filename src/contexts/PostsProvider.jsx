@@ -1,8 +1,12 @@
 import React, { createContext, useState, useEffect } from "react";
+
 // import data from "../fakeData/data.json";
 // import data from "/fakeData/data.json";
 
 export const PostsContext = createContext();
+
+const VITE_SERVER_ORIGIN = import.meta.env.VITE_SERVER_ORIGIN;
+console.log(`VITE SERVER ORIGIN : ${VITE_SERVER_ORIGIN}`);
 
 const PostsProvider = ({ children }) => {
   // 1) fetch the data
@@ -12,12 +16,12 @@ const PostsProvider = ({ children }) => {
 
   const [posts, setPosts] = useState([]);
   const fetchData = () => {
-    fetch("/fakeData/data.json")
+    fetch(`${VITE_SERVER_ORIGIN}/posts`)
       .then((promise) => {
         return promise.json();
       })
       .then((dataJson) => {
-        setPosts(dataJson);
+        setPosts(JSON.parse(dataJson));
       });
   };
 
