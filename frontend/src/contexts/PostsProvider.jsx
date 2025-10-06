@@ -6,7 +6,7 @@ import React, { createContext, useState, useEffect } from "react";
 export const PostsContext = createContext();
 
 const VITE_SERVER_ORIGIN = import.meta.env.VITE_SERVER_ORIGIN;
-console.log(`VITE SERVER ORIGIN : ${VITE_SERVER_ORIGIN}`);
+// console.log(`VITE SERVER ORIGIN : ${VITE_SERVER_ORIGIN}`);
 
 const PostsProvider = ({ children }) => {
   // 1) fetch the data
@@ -16,7 +16,7 @@ const PostsProvider = ({ children }) => {
 
   const [posts, setPosts] = useState([]);
   const fetchData = () => {
-    fetch(`${VITE_SERVER_ORIGIN}/posts`)
+    fetch(`${VITE_SERVER_ORIGIN}/api/posts`)
       .then((promise) => {
         return promise.json();
       })
