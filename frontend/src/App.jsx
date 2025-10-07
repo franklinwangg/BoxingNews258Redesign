@@ -5,19 +5,23 @@ import SignUp from "./pages/SignUp/SignUp";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PostsProvider from "./contexts/PostsProvider";
 import Post from "./pages/Post/Post";
+import UserProvider from "./contexts/UserProvider";
 
 const App = () => {
   return (
     <BrowserRouter>
       {/* Routes */}
-      <PostsProvider>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/sign-up" element={<SignUp />} />
-          <Route path="/post/:id" element={<Post />} />
-        </Routes>
-      </PostsProvider>
+
+      <UserProvider>
+        <PostsProvider>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/sign-up" element={<SignUp />} />
+            <Route path="/post/:id" element={<Post />} />
+          </Routes>
+        </PostsProvider>
+      </UserProvider>
     </BrowserRouter>
   );
 };

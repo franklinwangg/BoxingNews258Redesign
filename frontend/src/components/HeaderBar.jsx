@@ -1,12 +1,20 @@
-import React from "react";
+import { useContext } from "react";
 import logo from "../assets/logo.png";
 import "./HeaderBar.css";
 import { useNavigate } from "react-router-dom";
 import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
+import { UserContext } from "../../src/contexts/UserProvider";
 
 const HeaderBar = () => {
   const navigate = useNavigate();
+  const { user, setUser } = useContext(UserContext);
+  console.log("user : ", user);
+  if (user === null) {
+    console.log("user is null");
+  } else {
+    console.log("user isn't null");
+  }
 
   return (
     <>
@@ -15,22 +23,28 @@ const HeaderBar = () => {
           <div className="brand">SB NATION</div>
           <div className="actions">
             <div className="actions__auth-links">
-              <button
-                className="header__auth-btn"
-                onClick={() => {
-                  navigate("/sign-up");
-                }}
-              >
-                Sign Up
-              </button>
-              <button
-                className="header__auth-btn"
-                onClick={() => {
-                  navigate("/login");
-                }}
-              >
-                Login
-              </button>
+              {user === null ? (
+                <div>
+                  <button
+                    className="header__auth-btn"
+                    onClick={() => {
+                      navigate("/sign-up");
+                    }}
+                  >
+                    Sign Up
+                  </button>
+                  <button
+                    className="header__auth-btn"
+                    onClick={() => {
+                      navigate("/login");
+                    }}
+                  >
+                    Login
+                  </button>
+                </div>
+              ) : (
+                <div>{user}</div>
+              )}
             </div>
           </div>
         </div>

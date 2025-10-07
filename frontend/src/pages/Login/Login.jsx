@@ -9,7 +9,7 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const [user, setUser] = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
 
   console.log("VITE SERVER ORIGIN : ", VITE_SERVER_ORIGIN);
   const handleSubmitButton = async (e) => {

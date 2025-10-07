@@ -8,6 +8,7 @@ import HeaderBar from "../../components/HeaderBar";
 import { Link } from "react-router-dom";
 
 import { PostsContext } from "../../contexts/PostsProvider";
+import { UserContext } from "../../contexts/UserProvider";
 
 const Homepage = () => {
   // extract the first three posts, and paste them onto the stories
@@ -24,8 +25,6 @@ const Homepage = () => {
   // do nothing with the post's id, but do stuff with the article link etc
 
   const { posts } = useContext(PostsContext);
-  console.log("homepage : posts - ", posts);
-  console.log("posts[0] : ", posts[0]);
 
   return (
     <div className="homepage">

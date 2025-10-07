@@ -13,7 +13,7 @@ const UserProvider = ({ children }) => {
   // 3) put the useState into the useContext with createContext
   // 4) wrap the UserContext around necessary elements in app
 
-  const [user, setUser] = useState([]);
+  const [user, setUser] = useState(null);
 
   return (
     <UserContext.Provider value={{ user, setUser }}>
